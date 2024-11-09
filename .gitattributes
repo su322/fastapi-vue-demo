@@ -13,7 +13,7 @@ services/frontend/* text eol=lf
 services/backend/* text eol=crlf
 *.py eol=crlf
 
-# 文件类型规则的优先级高于路径规则
+# 文件类型规则的优先级高于路径规则高于第二行的全局规则
 # 特定类型文件强制使用 LF，避免解析错误
 *.sh eol=lf
 
