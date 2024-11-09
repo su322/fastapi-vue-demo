@@ -27,3 +27,13 @@ services/backend/* text eol=crlf
 *.gif binary
 *.zip binary
 *.exe binary
+*.pdf binary
+*.ico binary
+*.mp4 binary
+*.mp3 binary
+*.wav binary
+*.dll binary
+*.so binary
+*.tar binary
+*.gz binary
+*.rar binary
