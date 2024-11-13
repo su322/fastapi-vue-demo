@@ -3,3 +3,5 @@ uvicorn==0.32.0
 aerich==0.7.2
 asyncpg==0.30.0
 tortoise-orm==0.21.7
+bcrypt==4.2.0
+passlib==1.7.4
