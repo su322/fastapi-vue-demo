@@ -3,12 +3,17 @@ from tortoise.contrib.pydantic import pydantic_model_creator
 from src.database.models import Users
 
 
-UserInSchema = pydantic_model_creator(#创建新用户
+# 创建一个名为 UserIn 的 Pydantic 模型，用于表示用户输入数据，不包括只读字段
+UserInSchema = pydantic_model_creator(
     Users, name="UserIn", exclude_readonly=True
 )
-UserOutSchema = pydantic_model_creator(#检索在我们的应用程序之外使用的用户信息，以便返回给最终用户
+
+# 创建一个名为 UserOut 的 Pydantic 模型，用于表示用户输出数据，不包括密码、创建时间和修改时间字段
+UserOutSchema = pydantic_model_creator(
     Users, name="UserOut", exclude=["password", "created_at", "modified_at"]
 )
-UserDatabaseSchema = pydantic_model_creator(#检索应用程序中使用的用户信息，以验证用户
+
+# 创建一个名为 User 的 Pydantic 模型，用于表示数据库中的用户数据，不包括创建时间和修改时间字段
+UserDatabaseSchema = pydantic_model_creator(
     Users, name="User", exclude=["created_at", "modified_at"]
 )
