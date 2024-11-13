@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from database.register import register_tortoise
-from database.config import TORTOISE_ORM
+from src.database.register import register_tortoise
+from src.database.config import TORTOISE_ORM
 
 
 app = FastAPI()
