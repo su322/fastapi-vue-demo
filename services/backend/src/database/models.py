@@ -1,6 +1,8 @@
 from tortoise import fields, models
 
-
+#当对模型进行更改时，可以运行以下命令来更新数据库：
+#docker-compose exec backend aerich migrate
+#docker-compose exec backend aerich upgrade
 class Users(models.Model):
     id = fields.IntField(pk=True)
     username = fields.CharField(max_length=20, unique=True)
