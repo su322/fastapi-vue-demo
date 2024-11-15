@@ -107,6 +107,6 @@ async def delete_note(note_id, current_user) -> Status:  # UPDATED
         deleted_count = await Notes.filter(id=note_id).delete()
         if not deleted_count:
             raise HTTPException(status_code=404, detail=f"Note {note_id} not found")
-        return Status(message=f"Deleted note {note_id}")  # UPDATED
+        return Status(message=f"Deleted note {note_id}")
 
     raise HTTPException(status_code=403, detail=f"Not authorized to delete")
