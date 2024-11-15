@@ -1,22 +1,6 @@
 # 强制所有文本文件使用 LF 换行符
 * text eol=lf
 
-# 前端文件强制使用 LF （vue创建的时候本来就是LF）
-services/frontend/* text eol=lf
-*.html eol=lf
-*.css eol=lf
-*.js eol=lf
-*.vue eol=lf
-*.json eol=lf
-
-# 后端文件强制使用 CRLF （在windows环境开发）
-services/backend/* text eol=crlf
-*.py eol=crlf
-
-# 文件类型规则的优先级高于路径规则高于第二行的全局规则
-# 特定类型文件强制使用 LF，避免解析错误
-*.sh eol=lf
-
 # Windows 批处理文件使用 CRLF
 *.bat eol=crlf
 
