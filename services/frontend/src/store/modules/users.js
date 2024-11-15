@@ -44,6 +44,7 @@ const actions = {
     await commit('setUser', data);
   },
   // 删除用户（仅供参考，可能需要根据实际需求进行调整）
+  // eslint-disable-next-line no-empty-pattern
   async deleteUser({}, id) {
     // 发送 DELETE 请求到 user/id 接口
     await axios.delete(`user/${id}`);

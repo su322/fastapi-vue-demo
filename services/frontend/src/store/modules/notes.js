@@ -41,11 +41,13 @@ const actions = {
     commit('setNote', data);
   },
   // 更新笔记
+  // eslint-disable-next-line no-empty-pattern
   async updateNote({}, note) {
     // 发送 PATCH 请求到 note/id 接口
     await axios.patch(`note/${note.id}`, note.form);
   },
   // 删除笔记
+  // eslint-disable-next-line no-empty-pattern
   async deleteNote({}, id) {
     // 发送 DELETE 请求到 note/id 接口
     await axios.delete(`note/${id}`);
