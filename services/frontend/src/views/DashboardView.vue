@@ -27,7 +27,7 @@
       <h1>Notes</h1>
       <hr/><br/>
 
-      <div v-if="notes.length">
+      <div v-if="notes"> <!-- github issue #20 -->
         <div v-for="note in notes" :key="note.id" class="notes">
           <div class="card" style="width: 18rem;">
             <div class="card-body">
