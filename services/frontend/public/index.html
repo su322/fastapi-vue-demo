@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
+    <!-- 指定 HTML 文档的字符编码 -->
     <meta charset="utf-8">
+    <!-- 提供与 Internet Explorer 的兼容性 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置视口以确保页面在所有设备上响应良好 -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- 链接到网站的 favicon -->
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- 设置文档的标题，由 Webpack 动态注入 -->
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
+    <!-- 如果浏览器禁用了 JavaScript，则显示一条消息 -->
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    <!-- Vue.js 应用程序的根元素 -->
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <!-- 构建的文件将自动注入到这里 -->
   </body>
 </html>
