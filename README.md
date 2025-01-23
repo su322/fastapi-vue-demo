@@ -15,3 +15,5 @@ These contributions are licensed under the MIT License. See `LICENSE-Su322` for 
 docker-compose up -d --build
 ```
 对于前端部分，见services/frontend/README.md
+
+参考：https://testdriven.io/blog/developing-a-single-page-app-with-fastapi-and-vuejs/
